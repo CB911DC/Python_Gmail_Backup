@@ -1,0 +1,6 @@
+version: '3'
+services:
+  gmail_backup:
+    build:
+      context: ./gmail_backup
+      dockerfile: Dockerfile
