@@ -10,5 +10,5 @@ RUN wget "s3.amazonaws.com/aws-cli/awscli-bundle.zip" -O "awscli-bundle.zip" && 
     rm -rf awscli-bundle && \
     pip install --no-cache-dir -r requirements.txt && \
     apk --no-cache add nano
-COPY main.py .
+COPY . .
 #ENTRYPOINT ["python", "./main.py"]
